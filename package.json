@@ -3,8 +3,8 @@
     "version": "1.0.0",
     "main": "index.js",
     "scripts": {
-        "start": "node src/index.js",
-        "dev": "nodemon",
+        "start": "NODE_ENV=production node dist/index.js",
+        "dev": "NODE_ENV=development nodemon",
         "build": "tsc"
     },
     "author": "Bridge of Hearts",
@@ -17,6 +17,7 @@
         "mongoose": "^8.8.3"
     },
     "devDependencies": {
+        "@faker-js/faker": "^9.3.0",
         "@types/cors": "^2.8.17",
         "@types/express": "^5.0.0",
         "@types/mongoose": "^5.11.96",
